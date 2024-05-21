@@ -4,7 +4,9 @@ import {getUserById} from "~/server/db/users";
 
 export default defineEventHandler(async (event) => {
     const endPoints = [
-        '/api/auth/user'
+        '/api/auth/user',
+        '/api/user/tweets',
+        '/api/tweets'
     ]
 
     const isWhiteList = endPoints.some(endPoint => new UrlPattern(endPoint).match(event.node.req.url || ''))

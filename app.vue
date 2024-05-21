@@ -28,13 +28,13 @@ onBeforeMount(() => {
             </div>
           </div>
           <!--   Main content     -->
-          <main class="col-span-12 marker:md:col-span-8 xl:col-span-6">
+          <main class="col-span-12 md:col-span-8 xl:col-span-6">
             <NuxtPage/>
           </main>
 
           <!--   Right sidebar     -->
           <div
-              class="hidden col-span-5 bg-blue-500 md:block md:col-span-3 xl:col-span-4"
+              class="hidden col-span-5 md:block md:col-span-3 xl:col-span-4"
           >
             <div class="sticky top-0">
               <SidebarRight/>

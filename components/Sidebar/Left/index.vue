@@ -7,6 +7,7 @@ import {
   EllipsisHorizontalCircleIcon,
   HashtagIcon,
   InboxIcon,
+  PencilIcon,
   UserIcon
 } from "@heroicons/vue/24/outline";
 
@@ -75,6 +76,18 @@ const {defaultTransition} = useTailwindConfig()
         </template>
         <template v-slot:name>更多</template>
       </SidebarLeftTab>
+      <div class="hidden xl:block">
+        <UIButton size="lg" :liquid="true">
+          <span class="font-bold w-full">发表文章</span>
+        </UIButton>
+      </div>
+      <div class="block xl:hidden">
+        <UIButton>
+          <div class="w-6 h-6 font-bold">
+            <PencilIcon/>
+          </div>
+        </UIButton>
+      </div>
     </div>
   </div>
 </template>
